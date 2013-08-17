@@ -1,9 +1,7 @@
 {
-  "name": "portfolio",
+  "name": "mobile",
   "version": "0.0.0",
-  "dependencies": {
-    "grunt-karma": "~0.4.5"
-  },
+  "dependencies": {},
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-copy": "~0.4.1",
@@ -24,10 +22,16 @@
     "grunt-karma": "~0.4.3",
     "grunt-open": "~0.2.0",
     "grunt-concurrent": "~0.3.0",
+    "grunt-string-replace": "~0.2.4",
     "matchdep": "~0.1.2",
     "connect-livereload": "~0.2.0",
     "grunt-google-cdn": "~0.2.0",
-    "grunt-ngmin": "~0.0.2"
+    "grunt-ngmin": "~0.0.2",
+    "grunt-contrib-jade": "~0.4.0",
+    "grunt-contrib-stylus": "~0.6.0",
+    "generator-jade": "*",
+    "grunt-html2js": "*",
+    "yo": "~1.0.0"
   },
   "engines": {
     "node": ">=0.8.0"
