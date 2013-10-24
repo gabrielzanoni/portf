@@ -1,0 +1,32 @@
+#_nav {
+  .background($blue);
+  .box-inset-shadow();
+
+  ul {
+    margin: 0px;
+    line-height: 1.4em;
+
+    li {
+      float: right;
+      display: inline-block;
+      margin: 0.6em 1em 0.6em 0;
+
+      a {
+        font: 14px Helvetica;
+        text-decoration: none;
+        background-color: none;
+        color: $lighter-grey;
+        line-height: 1em;
+        padding: 0.1em 0.5em 0.1em 0.5em;
+        transition: all 0.3s linear;
+        .border-radius(0.3em);
+        
+        &:hover {
+          background-color: $lighter-grey;
+          color: $darker-grey;
+        }
+      }
+    }
+
+  }
+}

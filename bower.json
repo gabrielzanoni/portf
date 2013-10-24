@@ -1,16 +1,16 @@
 {
-  "name": "Portfolio",
+  "name": "mobile",
   "version": "0.0.0",
   "dependencies": {
-    "angular": "~1.0.7",
-    "json3": "~3.2.4","es5-shim": "~2.0.8",
-    "jade": "0.34.1",
-    "coffee-script": "1.6.3",
-    "less": "1.4.2",
-    "require-stylus": "1.0.8",
-    "angular-resource": "~1.0.7",
-    "angular-cookies": "~1.0.7",
-    "angular-sanitize": "~1.0.7"
+    "angular-hammer": "~1.0.1",
+    "angular-unstable": "1.1.5",
+    "json3": "~3.2.4",
+    "es5-shim": "~2.0.8",
+    "iscroll": "~5.0.4",
+    "angular-sanitize": "~1.0.7",
+    "angular-ui-router": "0.0.1",
+    "underscore": "1.5.1",
+    "cookies.js": "https://github.com/ScottHamper/Cookies.git#0.3.1"
   },
   "devDependencies": {
     "angular-mocks": "~1.0.7",

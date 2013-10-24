@@ -1,0 +1,50 @@
+!!! 5
+html.no-js
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    title
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width')
+    //Place favicon.ico and apple-touch-icon.png in the root directory 
+    //build:css({.tmp,app}) styles/main.css 
+    link(rel='stylesheet', href='styles/pages/reset.css')
+    //endbuild 
+  body(ng-app='app')
+    //if lt IE 7
+      p.chromeframe
+        | You are using an outdated browser.
+        a(href='http://browsehappy.com/') Upgrade your browser today
+        | or
+        a(href='http://www.google.com/chromeframe/?redirect=true') install Google Chrome Frame
+        | to better experience this site.
+    //if lt IE 9
+      script(src='bower_components/es5-shim/es5-shim.js')
+      script(src='bower_components/json3/lib/json3.min.js')
+    //Add your site or application content here
+
+    .nav-bar(style="height: 20%; width: 100%", ng-include="'views/nav.html'")
+    
+    div(ng-controller='MainCtrl')
+
+    .container(ng-view='')
+
+    // Google Analytics: change UA-XXXXX-X to be your site's ID. 
+    script
+      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src='//www.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+    script(src='bower_components/angular-unstable/angular.js')
+      
+    //build:js scripts/modules.js 
+    script(src='bower_components/angular-sanitize/angular-sanitize.js')
+    //endbuild 
+
+    //build:js({.tmp,app}) scripts/scripts.js 
+    script(src='scripts/app.js')
+    script(src='scripts/templates.js')
+    
+    script(src='scripts/controllers/main.js')
+
+    //endbuild 
