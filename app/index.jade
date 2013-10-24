@@ -9,22 +9,8 @@ html.no-js
     //Place favicon.ico and apple-touch-icon.png in the root directory 
     //build:css({.tmp,app}) styles/main.css 
     link(rel='stylesheet', href='styles/pages/reset.css')
-    link(rel='stylesheet', href='styles/pages/examples.css')
-
-    link(rel='stylesheet', href='styles/components/buttons.css')
-    link(rel='stylesheet', href='styles/components/icons.css')
-    link(rel='stylesheet', href='styles/components/menu-lateral.css')
-    link(rel='stylesheet', href='styles/components/headers.css')
-    link(rel='stylesheet', href='styles/components/forms.css')
-    link(rel='stylesheet', href='styles/components/inputs.css')
-    link(rel='stylesheet', href='styles/components/selects.css')
-    link(rel='stylesheet', href='styles/components/label.css')
-
-    link(rel='stylesheet', href='styles/tq/tq-stack-menu.css')
-    link(rel='stylesheet', href='styles/tq/tq-carousel.css')
-    link(rel='stylesheet', href='styles/tq/tq-slide.css')
     //endbuild 
-  body(ng-app='mobileApp')
+  body(ng-app='app')
     //if lt IE 7
       p.chromeframe
         | You are using an outdated browser.
@@ -37,7 +23,7 @@ html.no-js
       script(src='bower_components/json3/lib/json3.min.js')
     //Add your site or application content here
 
-    span TESTE TESTE
+    .nav-bar(style="height: 20%; width: 100%", ng-include="'views/nav.html'")
     
     div(ng-controller='MainCtrl')
 

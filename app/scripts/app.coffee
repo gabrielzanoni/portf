@@ -3,10 +3,6 @@
 # Declare app level module which depends on filters, and services
 App = angular.module('app', [
   'app.controllers'
-  'app.directives'
-  'app.filters'
-  'app.services'
-  'partials'
 ])
 
 App.config([
@@ -16,9 +12,9 @@ App.config([
 ($routeProvider, $locationProvider, config) ->
 
   $routeProvider
-    .when('/profile', {templateUrl: '/partials/profile.html'})
-    .when('/skills', {templateUrl: '/partials/skills.html'})
-    .when('/work', {templateUrl: '/partials/work.html'})
+    .when('/profile', {templateUrl: '/views/profile.html'})
+    .when('/skills', {templateUrl: '/views/skills.html'})
+    .when('/work', {templateUrl: '/views/work.html'})
 
     # Catch all
     .otherwise({redirectTo: '/profile'})

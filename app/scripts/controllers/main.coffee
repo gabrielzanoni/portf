@@ -1,7 +1,7 @@
 'use strict'
 
-angular.module('mobileApp')
-  .controller 'MainCtrl', ['$scope','$state', ($scope, $state) ->
+angular.module('app.controllers', [])
+  .controller 'MainCtrl', ['$scope', ($scope) ->
 
     $scope.data = new Date()
 
